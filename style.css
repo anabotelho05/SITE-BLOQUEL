@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ body {
 
 /* HEADER */
 .header {
-    background: #000000;
+    background: #ffffff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,6 +36,24 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
 .logo h1 {
     color: #9d1722;
     font-size: 2.2rem;
@@ -50,7 +68,7 @@ body {
 }
 
 .nav-menu a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -75,10 +93,29 @@ body {
     transition: 0.3s;
 }
 
+/* LOGO PRINCIPAL */
+.logo-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo-principal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(157, 23, 34, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.logo-principal-img:hover {
+    transform: scale(1.1);
+}
+
 /* SOBRE A LOJA */
 .sobre {
     padding: 120px 0 80px;
-    background: #000000;
+    background: #ffffff;
 }
 
 .sobre h2 {
@@ -90,7 +127,7 @@ body {
 }
 
 .sobre p {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.3rem;
     text-align: center;
     max-width: 900px;
@@ -144,7 +181,7 @@ body {
 /* OFERTAS DO MÊS - SEÇÃO EM DESTAQUE */
 .ofertas {
     padding: 100px 0;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    background: #ffffff;
     position: relative;
 }
 
@@ -296,11 +333,11 @@ body {
 /* CONTATO */
 .contato {
     padding: 100px 0;
-    background: #000000;
+    background: #ffffff;
 }
 
 .contato h2 {
-    color: #ffffff;
+    color: #000000;
     font-size: 2.8rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -415,6 +452,25 @@ body {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .logo-img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    .logo-principal-img {
+        width: 120px;
+        height: 120px;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
